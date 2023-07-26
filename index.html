@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediba Doctors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        background: "linear-gradient(45deg, red, blue)",
+                        'hero-pattern': "url('./img/hero01.jpg')",
+                        'l-gradient': "linear-gradient(red, yellow)",
+                        'image-gradient': "url('./img/hero01.jpg'),linear-gradient(red, yellow)",
+                        'double-image': "url(./img/hero01.jpg), url(./img/hero02.jpg);",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="">
+    <header class="">
+        <div class="bg-[#0a272c] py-1.5"
+            style="background-image: url('./img/menu-shape.png');background-repeat: no-repeat;">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <div class="flex-1 flex items-center justify-between">
+                        <div class="flex gap-3 justify-center items-center text-white">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@gmail.com</p>
+                        </div>
+                        <div class="flex gap-3 justify-center items-center text-white mr-36">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Sun - Fri:6.00am - 02.00pm</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex items-center justify-end">
+                        <div class="flex gap-2 items-center text-white justify-end">
+                            <!-- <img src="./img/flag01.png" alt="">
+                            <p>English</p>
+                            <i class="fa-solid fa-caret-down"></i> -->
+
+                            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay"
+                                data-dropdown-delay="500" data-dropdown-trigger="hover"
+                                class="text-white bg-transparent hover:bg-transparent outline-none  font-medium rounded-lg text-sm px-5  text-center inline-flex items-center"
+                                type="button"> <img src="./img/flag01.png" alt="" class="mr-2 w-6 h-6"> English <svg
+                                    class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownDelay"
+                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDelayButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">বাংলা</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script src="https://kit.fontawesome.com/c77e6dd1d8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
