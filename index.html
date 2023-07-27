@@ -24,6 +24,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        textBlackColor: '#222222',
                         themeRedColor: '#e72254',
                         themeDarkColor: '#203240',
                     },
@@ -277,9 +278,42 @@
 
     <main>
         <!-- banner start-->
-        <section class="bg-bannerBg pt-12 h-[calc(100vh-140px)]">
+        <section class="bg-bannerBg pt-12 ">
+            <!-- h-[calc(100vh-140px)] -->
             <div class="container mx-auto">
-
+                <!-- banner wrapper -->
+                <div class="flex flex-col gap-5 lg:flex-row items-center justify-center lg:justify-around px-2 lg:px-0">
+                    <!-- banner left side -->
+                    <div class="flex-1">
+                        <p
+                            class="inline-block uppercase text-themeRedColor rounded-full outline-1 outline-dashed py-2 px-4 font-medium">
+                            <i class="fa-solid fa-circle mr-3 text-sm"></i> WELLCOME TO MEDICAL
+                        </p>
+                        <h2
+                            class="text-[36px] md:text-[50px] leading-[60px] md:leading-[70px] text-[##222222] font-bold mt-[10px] mb-[16px]">
+                            We Provide
+                            Medical Service Solution.</h2>
+                        <p class="text-[#636363] text-[17px] leading-7 mb-[45px] ">Medical to eu nibh vitae est tempor
+                            molestie id sed exthe medical dignissim maximus ipsum
+                            metus ipsum.</p>
+                        <div class="flex flex-col lg:flex-row">
+                            <button type="button"
+                                class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm px-6 py-4 text-center">
+                                <i class="fa-regular fa-circle mr-2 "></i>
+                                <p>Appointments</p>
+                            </button>
+                            <a href="#"
+                                class="text-textBlackColor text-[21px] font-semibold underline mt-5 lg:ml-5 pb-7 lg:pb-0 inline-block">29+
+                                Years of experience</a>
+                        </div>
+                    </div>
+                    <!-- banner right side -->
+                    <div class="flex-1 hidden lg:block">
+                        <figure>
+                            <img class="w-full" src="./img/heo2.png" alt="">
+                        </figure>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- banner end-->
