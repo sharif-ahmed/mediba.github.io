@@ -29,6 +29,7 @@
                         textBlackColor: '#222222',
                         themeRedColor: '#e72254',
                         themeDarkColor: '#203240',
+                        bgOverlayColor: 'rgba(32, 50, 64,0.929)',
                     },
                     fontFamily: {
                         'montserrat': ['Montserrat', 'sans-serif'],
@@ -37,25 +38,33 @@
                     },
                     backgroundImage: {
                         background: "linear-gradient(45deg, red, blue)",
+                        appoinmentBg: "url(./img/shape01.png), url(./img/book.jpg);",
+                        appoinmentBg2: "url(./img/shape01.png), rgba(32, 50, 64,0.929);",
                         bannerBg: "url('./img/hero01.jpg')",
                         menuShape: "url('./img/menu-shape.png')",
-                        'l-gradient': "linear-gradient(red, yellow)",
-                        'image-gradient': "url('./img/hero01.jpg'),linear-gradient(red, yellow)",
-                        'double-image': "url(./img/hero01.jpg), url(./img/hero02.jpg);",
-                        hero: `url('./img/menu-shape.png'),linear-gradient(114.86deg, #2D0936 14.71%, #170312 78.23%)`,
+                        lGradient: "linear-gradient(red, yellow)",
+                        imageGradient: "url('./img/hero01.jpg'),linear-gradient(red, yellow)",
+                        doubleImage: "url(./img/hero01.jpg), url(./img/hero02.jpg);",
+                        hero: `url('./img/book.jpg'),linear-gradient(114.86deg, #2D0936 14.71%, #170312 78.23%)`,
+                        ctaAppointmentBg: `url('./img/book.jpg')`,
                     },
                     backgroundSize: {
                         hero: "200px, 100%",
-                        bannerBg: 'cover'
+                        bannerBg: 'cover',
+                        appoinmentBg: 'auto,cover'
                     },
                     backgroundPosition: {
                         hero: "start",
                         menuShape: "start",
                     },
                     backgroundRepeat: {
-                        hero: "no-repeat",
+                        hero: 'no-repeat',
                         menuShape: "no-repeat",
                         bannerBg: "no-repeat",
+                        appoinmentBg: 'no-repeat',
+                    },
+                    backgroundColor: {
+                        appoinmentBg: 'rgb(32, 50, 64,0.929)',
                     },
                 }
             }
@@ -231,7 +240,7 @@
                 </a>
                 <div class="flex gap-2 lg:order-2">
                     <button type="button"
-                        class="text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm px-6 py-4 text-center lg:mr-0 hidden md:block">
+                        class="text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0 hidden md:block">
                         <i class="fa-regular fa-circle mr-2 "></i> Contact Us</button>
                     <button data-collapse-toggle="navbar-cta" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -300,7 +309,7 @@
                             metus ipsum.</p>
                         <div class="flex flex-col lg:flex-row lg:items-center">
                             <button type="button"
-                                class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm px-6 py-4 text-center">
+                                class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
                                 <i class="fa-regular fa-circle mr-2 "></i>
                                 <p>Appointments</p>
                             </button>
@@ -382,7 +391,7 @@
 
                         <div class="flex flex-col lg:flex-row">
                             <button type="button"
-                                class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm px-6 py-4 text-center">
+                                class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
                                 <i class="fa-regular fa-circle mr-2 "></i>
                                 <p>About More</p>
                             </button>
@@ -546,6 +555,104 @@
             </div>
         </section>
         <!-- counter section end -->
+
+        <!-- appoinment start -->
+
+        <!-- style="background-image:url('./img/shape01.png'),url('./img/book.jpg');
+        background-size:auto,cover;
+         background-repeat: no-repeat;
+         background-color: rgb(32, 50, 64); " -->
+
+        <!-- 
+            relative z-[99] 
+            before:absolute 
+            before:top-0
+            before:left-0
+            before:right-0
+            before:bottom-0
+            before:bg-[#203240]
+            before:z-[-5]
+            before:opacity-[0.929]
+          -->
+
+
+        <section class="my-12 py-12 bg-ctaAppointmentBg bg-cover bg-no-repeat overflow-hidden
+            relative z-[99] 
+            before:absolute 
+            before:top-0
+            before:left-0
+            before:right-0
+            before:bottom-0
+            before:bg-[#203240]
+            before:z-[-5]
+            before:opacity-[0.929]">
+            <img src="./img/shape01.png" alt="" class="hidden lg:block absolute z-[-4] -top-[70px]">
+            <div class="container mx-auto px-2 lg:px-0">
+                <!-- appoinment wrapper -->
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                    <div class="w-full lg:w-[40%]   justify-start">
+                        <h2 class="text-white text-[40px] font-bold leading-[55px]">Medical Ready to get our Health
+                            Service!</h2>
+                    </div>
+                    <figure class="w-[30%] flex-1 hidden lg:flex justify-center">
+                        <img src="./img/stethscope.png" alt="">
+                    </figure>
+                    <div class="w-full lg:w-[20%] flex-1 flex justify-start lg:justify-end">
+                        <div class="flex flex-col lg:flex-row">
+                            <button type="button"
+                                class="flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
+                                <i class="fa-regular fa-circle mr-2 "></i>
+                                <p>Book Appoinments</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section class="min-h-screen flex items-center justify-center">
+            <div class="relative w-full h-80">
+                <!---Background Image---
+                <div class="absolute top-0 left-0 w-full h-full bg-center bg-cover"
+                    style="background-image: url('./img/book.jpg');"></div>
+                <!-- Overlay --
+                <div class="absolute top-0 left-0 w-full h-full bg-[#203240] opacity-[.929]"></div>
+                <!-- Content Goes Here --
+                <div
+                    class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-2xl font-bold">
+                    <div class="container mx-auto">
+                        <!-- appoinment wrapper --
+                        <div class="flex flex-row items-center justify-between gap-10">
+                            <div class="w-[40%]   justify-start">
+                                <h2 class="text-white text-[40px] font-bold leading-[55px]">Medical Ready to get our
+                                    Health Service!</h2>
+                            </div>
+                            <figure class="w-[30%] flex-1 flex justify-center">
+                                <img src="./img/stethscope.png" alt="">
+                            </figure>
+                            <div class="w-[20%] flex-1 flex justify-end">
+                                <div class="flex flex-col lg:flex-row">
+                                    <button type="button"
+                                        class="flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
+                                        <i class="fa-regular fa-circle mr-2 "></i>
+                                        <p>Book Appoinments</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- appoinment end -->
+
+
+
+
+
+
     </main>
 
 
