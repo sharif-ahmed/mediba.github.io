@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mediba Doctors</title>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <link href="./css/icofont.min.css" rel="stylesheet" />
 
@@ -25,16 +25,16 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                        textBlackColor: '#222222',
-                        themeRedColor: '#e72254',
-                        themeDarkColor: '#203240',
-                        bgOverlayColor: 'rgba(32, 50, 64,0.929)',
+                        clifford: "#da373d",
+                        textBlackColor: "#222222",
+                        themeRedColor: "#e72254",
+                        themeDarkColor: "#203240",
+                        bgOverlayColor: "rgba(32, 50, 64,0.929)",
                     },
                     fontFamily: {
-                        'montserrat': ['Montserrat', 'sans-serif'],
-                        'roboto': ['Roboto', 'sans-serif'],
-                        'rubik': ['Rubik', 'sans-serif'],
+                        montserrat: ["Montserrat", "sans-serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                        rubik: ["Rubik", "sans-serif"],
                     },
                     backgroundImage: {
                         background: "linear-gradient(45deg, red, blue)",
@@ -43,32 +43,33 @@
                         bannerBg: "url('./img/hero01.jpg')",
                         menuShape: "url('./img/menu-shape.png')",
                         lGradient: "linear-gradient(red, yellow)",
-                        imageGradient: "url('./img/hero01.jpg'),linear-gradient(red, yellow)",
+                        imageGradient:
+                            "url('./img/hero01.jpg'),linear-gradient(red, yellow)",
                         doubleImage: "url(./img/hero01.jpg), url(./img/hero02.jpg);",
                         hero: `url('./img/book.jpg'),linear-gradient(114.86deg, #2D0936 14.71%, #170312 78.23%)`,
                         ctaAppointmentBg: `url('./img/book.jpg')`,
                     },
                     backgroundSize: {
                         hero: "200px, 100%",
-                        bannerBg: 'cover',
-                        appoinmentBg: 'auto,cover'
+                        bannerBg: "cover",
+                        appoinmentBg: "auto,cover",
                     },
                     backgroundPosition: {
                         hero: "start",
                         menuShape: "start",
                     },
                     backgroundRepeat: {
-                        hero: 'no-repeat',
+                        hero: "no-repeat",
                         menuShape: "no-repeat",
                         bannerBg: "no-repeat",
-                        appoinmentBg: 'no-repeat',
+                        appoinmentBg: "no-repeat",
                     },
                     backgroundColor: {
-                        appoinmentBg: 'rgb(32, 50, 64,0.929)',
+                        appoinmentBg: "rgb(32, 50, 64,0.929)",
                     },
-                }
-            }
-        }
+                },
+            },
+        };
     </script>
 </head>
 
@@ -81,21 +82,21 @@
                 <div class="flex flex-row items-center justify-between px-2 lg:px-0">
                     <!-- top header left side -->
                     <div class="flex flex-col md:flex-row md:gap-3 lg:gap-x-32 lg:items-center lg:justify-between">
-                        <div class=" flex gap-1 lg:gap-3 justify-start lg:justify-center items-center text-white">
+                        <div class="flex gap-1 lg:gap-3 justify-start lg:justify-center items-center text-white">
                             <i class="fa-solid fa-envelope text-sm"></i>
                             <p class="text-xs lg:text-sm">support@gmail.com</p>
                         </div>
-                        <div class=" flex gap-1 lg:gap-3 justify-end items-center text-white">
+                        <div class="flex gap-1 lg:gap-3 justify-end items-center text-white">
                             <i class="fa-solid fa-clock text-sm"></i>
                             <p class="text-xs lg:text-sm">Sun - Fri: 6.00am - 02.00pm</p>
                         </div>
                     </div>
                     <!-- top header right side -->
-                    <div class=" flex items-center justify-end">
+                    <div class="flex items-center justify-end">
                         <div class="flex gap-1 items-center text-white justify-end">
                             <div class="flex items-center md:order-2 text-white">
                                 <button type="button" data-dropdown-toggle="language-dropdown-menu"
-                                    class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm  dark:text-white rounded-lg cursor-pointer text-white">
+                                    class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm dark:text-white rounded-lg cursor-pointer text-white">
                                     <svg class="w-5 h-5 mr-2 rounded-full" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         viewBox="0 0 3900 3900">
@@ -130,7 +131,7 @@
                                 <!-- Dropdown -->
                                 <div class="z-50 hidden my-4 text-base list-none bg-[#0a272c] divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
                                     id="language-dropdown-menu">
-                                    <ul class=" font-medium" role="none">
+                                    <ul class="font-medium" role="none">
                                         <li>
                                             <a href="#"
                                                 class="block px-4 py-2 text-sm text-white rounded-t-lg hover:bg-[#e72254]"
@@ -234,14 +235,15 @@
         </div>
         <!-- nav menu -->
         <nav class="container mx-auto bg-white border-gray-200 dark:bg-gray-900 px-2 lg:px-0">
-            <div class=" flex flex-row flex-wrap items-center justify-between mx-auto py-5">
+            <div class="flex flex-row flex-wrap items-center justify-between mx-auto py-5">
                 <a href="https://flowbite.com/" class="flex items-center">
                     <img src="./img/logo.png" class="h-8 mr-3" alt="Mediba Logo" />
                 </a>
                 <div class="flex gap-2 lg:order-2">
                     <button type="button"
                         class="text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0 hidden md:block">
-                        <i class="fa-regular fa-circle mr-2 "></i> Contact Us</button>
+                        <i class="fa-regular fa-circle mr-2"></i> Contact Us
+                    </button>
                     <button data-collapse-toggle="navbar-cta" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-cta" aria-expanded="false">
@@ -289,7 +291,7 @@
 
     <main>
         <!-- banner start-->
-        <section class="bg-bannerBg pt-12 ">
+        <section class="bg-bannerBg pt-12">
             <!-- h-[calc(100vh-140px)] -->
             <div class="container mx-auto">
                 <!-- banner wrapper -->
@@ -298,19 +300,21 @@
                     <div class="flex-1">
                         <p
                             class="inline-block uppercase text-themeRedColor rounded-full outline-1 outline-dashed py-2 px-4 font-medium">
-                            <i class="fa-solid fa-circle mr-3 text-sm"></i> WELLCOME TO MEDICAL
+                            <i class="fa-solid fa-circle mr-3 text-sm"></i> WELLCOME TO
+                            MEDICAL
                         </p>
                         <h2
                             class="text-[36px] md:text-[50px] leading-[60px] md:leading-[70px] text-[##222222] font-bold mt-[10px] mb-[16px]">
-                            We Provide
-                            Medical Service Solution.</h2>
-                        <p class="text-[#636363] text-[17px] leading-7 mb-[45px] ">Medical to eu nibh vitae est tempor
-                            molestie id sed exthe medical dignissim maximus ipsum
-                            metus ipsum.</p>
+                            We Provide Medical Service Solution.
+                        </h2>
+                        <p class="text-[#636363] text-[17px] leading-7 mb-[45px]">
+                            Medical to eu nibh vitae est tempor molestie id sed exthe
+                            medical dignissim maximus ipsum metus ipsum.
+                        </p>
                         <div class="flex flex-col lg:flex-row lg:items-center">
                             <button type="button"
                                 class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
-                                <i class="fa-regular fa-circle mr-2 "></i>
+                                <i class="fa-regular fa-circle mr-2"></i>
                                 <p>Appointments</p>
                             </button>
                             <a href="#"
@@ -321,7 +325,7 @@
                     <!-- banner right side -->
                     <div class="flex-1 hidden lg:block">
                         <figure>
-                            <img class="w-full" src="./img/heo2.png" alt="">
+                            <img class="w-full" src="./img/heo2.png" alt="" />
                         </figure>
                     </div>
                 </div>
@@ -330,16 +334,15 @@
         <!-- banner end-->
 
         <!-- our best service start -->
-        <section class="relative before:overflow-hidden before:absolute before:content['']  
-            before:w-full before:h-1/2 
-            before:bg-themeDarkColor before:z-[-1]">
+        <section
+            class="relative before:overflow-hidden before:absolute before:content[''] before:w-full before:h-1/2 before:bg-themeDarkColor before:z-[-1]">
             <div class="container mx-auto py-4 lg:py-20">
                 <!-- our service wrapper -->
-                <div class="flex flex-col gap-20 lg:flex-row  justify-center lg:justify-around px-2 lg:px-0">
+                <div class="flex flex-col gap-20 lg:flex-row justify-center lg:justify-around px-2 lg:px-0">
                     <!-- our service left side -->
                     <div class="hidden lg:block lg:w-[46%]">
                         <figure class="bg-white p-2">
-                            <img class="w-full lg:h-[620px] object-cover" src="./img/01.jpg" alt="">
+                            <img class="w-full lg:h-[620px] object-cover" src="./img/01.jpg" alt="" />
                         </figure>
                     </div>
                     <!-- our service right side -->
@@ -348,12 +351,15 @@
                             class="inline-block uppercase text-themeRedColor rounded-full outline-1 outline-dashed py-2 px-4 font-medium">
                             <i class="fa-solid fa-circle mr-3 text-sm"></i> OUR BEST SERVICE
                         </p>
-                        <h2 class="text-[36px] md:text-[50px] leading-[45px] md:leading-[70px] text-white font-bold 
-                            mt-[12px] lg:mt-[10px] mb-[12px] lg:mb-[16px]">
-                            About For Medical Service For Science Medicine.</h2>
-                        <p class="text-white text-[17px] leading-7 mb-[45px] ">Medical to eu nibh vitae est tempor
-                            molestie id sed exthe medical dignissim maximus ipsum metus re many variations Lorem Ipsum
-                            availab.There are many of pas ofb.There ainjected</p>
+                        <h2
+                            class="text-[36px] md:text-[50px] leading-[45px] md:leading-[70px] text-white font-bold mt-[12px] lg:mt-[10px] mb-[12px] lg:mb-[16px]">
+                            About For Medical Service For Science Medicine.
+                        </h2>
+                        <p class="text-white text-[17px] leading-7 mb-[45px]">
+                            Medical to eu nibh vitae est tempor molestie id sed exthe
+                            medical dignissim maximus ipsum metus re many variations Lorem
+                            Ipsum availab.There are many of pas ofb.There ainjected
+                        </p>
 
                         <ul class="flex flex-col gap-4 mb-7">
                             <li class="group mt-5">
@@ -362,8 +368,10 @@
                                         class="bg-themeRedColor group-hover:bg-themeDarkColor w-8 h-8 text-center leading-8 rounded-full">
                                         <i class="fa-solid fa-check-to-slot text-white w-8 h-8"></i>
                                     </div>
-                                    <p class="leading-7 text-[#636363]">We are many variations of by injected humour or
-                                        randomised pas Ipsum availab.There are many variations</p>
+                                    <p class="leading-7 text-[#636363]">
+                                        We are many variations of by injected humour or randomised
+                                        pas Ipsum availab.There are many variations
+                                    </p>
                                 </div>
                             </li>
                             <li class="group">
@@ -372,8 +380,10 @@
                                         class="bg-themeRedColor group-hover:bg-themeDarkColor w-8 h-8 text-center leading-8 rounded-full">
                                         <i class="fa-solid fa-check-to-slot text-white w-8 h-8"></i>
                                     </div>
-                                    <p class="leading-7 text-[#636363]">We are many variations of by injected humour or
-                                        randomised pas Ipsum availab.There are many variations</p>
+                                    <p class="leading-7 text-[#636363]">
+                                        We are many variations of by injected humour or randomised
+                                        pas Ipsum availab.There are many variations
+                                    </p>
                                 </div>
                             </li>
                             <li class="group">
@@ -382,17 +392,18 @@
                                         class="bg-themeRedColor group-hover:bg-themeDarkColor w-8 h-8 text-center leading-8 rounded-full">
                                         <i class="fa-solid fa-check-to-slot text-white w-8 h-8"></i>
                                     </div>
-                                    <p class="leading-7 text-[#636363]">We are many variations of by injected humour or
-                                        randomised pas Ipsum availab.There are many variations</p>
+                                    <p class="leading-7 text-[#636363]">
+                                        We are many variations of by injected humour or randomised
+                                        pas Ipsum availab.There are many variations
+                                    </p>
                                 </div>
                             </li>
-
                         </ul>
 
                         <div class="flex flex-col lg:flex-row">
                             <button type="button"
                                 class="w-[170px] flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
-                                <i class="fa-regular fa-circle mr-2 "></i>
+                                <i class="fa-regular fa-circle mr-2"></i>
                                 <p>About More</p>
                             </button>
                         </div>
@@ -408,147 +419,71 @@
                 <!-- counter wrapper -->
                 <div class="flex flex-wrap gap-5 md:gap-10 lg:gap-10 justify-center items-center">
                     <!-- counter item -->
-                    <div class="group flex flex-col lg:flex-row
-                     bg-[#dce8ef] hover:bg-themeDarkColor
-                     items-center justify-center
-                     ease-in-out duration-300
-                      gap-4 p-4 rounded-lg ">
+                    <div
+                        class="group flex flex-col lg:flex-row bg-[#dce8ef] hover:bg-themeDarkColor items-center justify-center ease-in-out duration-300 gap-4 p-4 rounded-lg">
                         <div class="bg-white p-2 rounded-full">
-                            <i class="fa-solid fa-user-doctor
-                            ease-in-out duration-300
-                            text-xl
-                            text-center
-                            leading-5
-                            relative
-                            z-[999]
-                            p-4
-                            after:rounded-full
-                            text-white
-                            after:absolute
-                            after:top-0
-                            after:left-0
-                            after:right-0
-                            after:bottom-0
-                            after:content['']
-                            after:bg-themeDarkColor
-                            after:z-[-1]
-                            group-hover:ease-in-out group-hover:duration-300
-                            group-hover:after:bg-themeRedColor
-                            "></i>
+                            <i
+                                class="fa-solid fa-user-doctor ease-in-out duration-300 text-xl text-center leading-5 relative z-[999] p-4 after:rounded-full text-white after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:content[''] after:bg-themeDarkColor after:z-[-1] group-hover:ease-in-out group-hover:duration-300 group-hover:after:bg-themeRedColor"></i>
                         </div>
 
-                        <div class="text-center lg:text-left group-hover:text-white ">
-                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">145K+</h2>
-                            <p class="text-[#333333] group-hover:text-white
-                            font-medium text-sm lg:text-[17px]">Doctor Support</p>
+                        <div class="text-center lg:text-left group-hover:text-white">
+                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">
+                                145K+
+                            </h2>
+                            <p class="text-[#333333] group-hover:text-white font-medium text-sm lg:text-[17px]">
+                                Doctor Support
+                            </p>
                         </div>
                     </div>
 
-                    <div class="group flex flex-col lg:flex-row
-                     bg-[#dce8ef] hover:bg-themeDarkColor
-                     items-center justify-center
-                     ease-in-out duration-300
-                      gap-4 p-4 rounded-lg ">
+                    <div
+                        class="group flex flex-col lg:flex-row bg-[#dce8ef] hover:bg-themeDarkColor items-center justify-center ease-in-out duration-300 gap-4 p-4 rounded-lg">
                         <div class="bg-white p-2 rounded-full">
-                            <i class="fa-solid fa-wheelchair-move
-                            ease-in-out duration-300
-                            text-xl
-                            text-center
-                            leading-5
-                            relative
-                            z-[999]
-                            p-4
-                            after:rounded-full
-                            text-white
-                            after:absolute
-                            after:top-0
-                            after:left-0
-                            after:right-0
-                            after:bottom-0
-                            after:content['']
-                            after:bg-themeDarkColor
-                            after:z-[-1]
-                            group-hover:ease-in-out group-hover:duration-300
-                            group-hover:after:bg-themeRedColor
-                            "></i>
+                            <i
+                                class="fa-solid fa-wheelchair-move ease-in-out duration-300 text-xl text-center leading-5 relative z-[999] p-4 after:rounded-full text-white after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:content[''] after:bg-themeDarkColor after:z-[-1] group-hover:ease-in-out group-hover:duration-300 group-hover:after:bg-themeRedColor"></i>
                         </div>
 
-                        <div class="text-center lg:text-left group-hover:text-white ">
-                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">145K+</h2>
-                            <p class="text-[#333333] group-hover:text-white
-                            font-medium text-sm lg:text-[17px]">Doctor Support</p>
+                        <div class="text-center lg:text-left group-hover:text-white">
+                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">
+                                145K+
+                            </h2>
+                            <p class="text-[#333333] group-hover:text-white font-medium text-sm lg:text-[17px]">
+                                Doctor Support
+                            </p>
                         </div>
                     </div>
 
-                    <div class="group flex flex-col lg:flex-row
-                     bg-[#dce8ef] hover:bg-themeDarkColor
-                     items-center justify-center
-                     ease-in-out duration-300
-                      gap-4 p-4 rounded-lg ">
+                    <div
+                        class="group flex flex-col lg:flex-row bg-[#dce8ef] hover:bg-themeDarkColor items-center justify-center ease-in-out duration-300 gap-4 p-4 rounded-lg">
                         <div class="bg-white p-2 rounded-full">
-                            <i class="fa-solid fa-truck-medical
-                            ease-in-out duration-300
-                            text-xl
-                            text-center
-                            leading-5
-                            relative
-                            z-[999]
-                            p-4
-                            after:rounded-full
-                            text-white
-                            after:absolute
-                            after:top-0
-                            after:left-0
-                            after:right-0
-                            after:bottom-0
-                            after:content['']
-                            after:bg-themeDarkColor
-                            after:z-[-1]
-                            group-hover:ease-in-out group-hover:duration-300
-                            group-hover:after:bg-themeRedColor
-                            "></i>
+                            <i
+                                class="fa-solid fa-truck-medical ease-in-out duration-300 text-xl text-center leading-5 relative z-[999] p-4 after:rounded-full text-white after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:content[''] after:bg-themeDarkColor after:z-[-1] group-hover:ease-in-out group-hover:duration-300 group-hover:after:bg-themeRedColor"></i>
                         </div>
 
-                        <div class="text-center lg:text-left group-hover:text-white ">
-                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">145K+</h2>
-                            <p class="text-[#333333] group-hover:text-white
-                            font-medium text-sm lg:text-[17px]">Doctor Support</p>
+                        <div class="text-center lg:text-left group-hover:text-white">
+                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">
+                                145K+
+                            </h2>
+                            <p class="text-[#333333] group-hover:text-white font-medium text-sm lg:text-[17px]">
+                                Doctor Support
+                            </p>
                         </div>
                     </div>
 
-                    <div class="group flex flex-col lg:flex-row
-                     bg-[#dce8ef] hover:bg-themeDarkColor
-                     items-center justify-center
-                     ease-in-out duration-300
-                      gap-4 p-4 rounded-lg ">
+                    <div
+                        class="group flex flex-col lg:flex-row bg-[#dce8ef] hover:bg-themeDarkColor items-center justify-center ease-in-out duration-300 gap-4 p-4 rounded-lg">
                         <div class="bg-white p-2 rounded-full">
-                            <i class="fa-solid fa-trophy
-                            ease-in-out duration-300
-                            text-xl
-                            text-center
-                            leading-5
-                            relative
-                            z-[999]
-                            p-4
-                            after:rounded-full
-                            text-white
-                            after:absolute
-                            after:top-0
-                            after:left-0
-                            after:right-0
-                            after:bottom-0
-                            after:content['']
-                            after:bg-themeDarkColor
-                            after:z-[-1]
-                            group-hover:ease-in-out group-hover:duration-300
-                            group-hover:after:bg-themeRedColor
-                            "></i>
+                            <i
+                                class="fa-solid fa-trophy ease-in-out duration-300 text-xl text-center leading-5 relative z-[999] p-4 after:rounded-full text-white after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:content[''] after:bg-themeDarkColor after:z-[-1] group-hover:ease-in-out group-hover:duration-300 group-hover:after:bg-themeRedColor"></i>
                         </div>
 
-                        <div class="text-center lg:text-left group-hover:text-white ">
-                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">145K+</h2>
-                            <p class="text-[#333333] group-hover:text-white
-                            font-medium text-sm lg:text-[17px]">Doctor Support</p>
+                        <div class="text-center lg:text-left group-hover:text-white">
+                            <h2 class="font-bold text-[20px] lg:text-[30px] leading-[39px] lg:leading-[49px]">
+                                145K+
+                            </h2>
+                            <p class="text-[#333333] group-hover:text-white font-medium text-sm lg:text-[17px]">
+                                Doctor Support
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -557,59 +492,6 @@
         <!-- counter section end -->
 
         <!-- appoinment start -->
-
-        <!-- style="background-image:url('./img/shape01.png'),url('./img/book.jpg');
-        background-size:auto,cover;
-         background-repeat: no-repeat;
-         background-color: rgb(32, 50, 64); " -->
-
-        <!-- 
-            relative z-[99] 
-            before:absolute 
-            before:top-0
-            before:left-0
-            before:right-0
-            before:bottom-0
-            before:bg-[#203240]
-            before:z-[-5]
-            before:opacity-[0.929]
-          -->
-
-
-        <section class="my-12 py-12 bg-ctaAppointmentBg bg-cover bg-no-repeat overflow-hidden
-            relative z-[99] 
-            before:absolute 
-            before:top-0
-            before:left-0
-            before:right-0
-            before:bottom-0
-            before:bg-[#203240]
-            before:z-[-5]
-            before:opacity-[0.929]">
-            <img src="./img/shape01.png" alt="" class="hidden lg:block absolute z-[-4] -top-[70px]">
-            <div class="container mx-auto px-2 lg:px-0">
-                <!-- appoinment wrapper -->
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
-                    <div class="w-full lg:w-[40%]   justify-start">
-                        <h2 class="text-white text-[40px] font-bold leading-[55px]">Medical Ready to get our Health
-                            Service!</h2>
-                    </div>
-                    <figure class="w-[30%] flex-1 hidden lg:flex justify-center">
-                        <img src="./img/stethscope.png" alt="">
-                    </figure>
-                    <div class="w-full lg:w-[20%] flex-1 flex justify-start lg:justify-end">
-                        <div class="flex flex-col lg:flex-row">
-                            <button type="button"
-                                class="flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
-                                <i class="fa-regular fa-circle mr-2 "></i>
-                                <p>Book Appoinments</p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <!-- <section class="min-h-screen flex items-center justify-center">
             <div class="relative w-full h-80">
@@ -648,16 +530,272 @@
 
         <!-- appoinment end -->
 
+        <!-- style="background-image:url('./img/shape01.png'),url('./img/book.jpg');
+        background-size:auto,cover;
+         background-repeat: no-repeat;
+         background-color: rgb(32, 50, 64); " -->
 
+        <!-- 
+            relative z-[99] 
+            before:absolute 
+            before:top-0
+            before:left-0
+            before:right-0
+            before:bottom-0
+            before:bg-[#203240]
+            before:z-[-5]
+            before:opacity-[0.929]
+          -->
 
+        <section
+            class="my-16 py-12 bg-ctaAppointmentBg bg-cover bg-no-repeat overflow-hidden relative z-[99] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[#203240] before:z-[-5] before:opacity-[0.929]">
+            <img src="./img/shape01.png" alt="" class="hidden lg:block absolute z-[-4] -top-[70px]" />
+            <div class="container mx-auto px-2 lg:px-0">
+                <!-- appoinment wrapper -->
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                    <div class="w-full lg:w-[40%] justify-start">
+                        <h2 class="text-white text-[40px] font-bold leading-[55px]">
+                            Medical Ready to get our Health Service!
+                        </h2>
+                    </div>
+                    <figure class="w-[30%] flex-1 hidden lg:flex justify-center">
+                        <img src="./img/stethscope.png" alt="" />
+                    </figure>
+                    <div class="w-full lg:w-[20%] flex-1 flex justify-start lg:justify-end">
+                        <div class="flex flex-col lg:flex-row">
+                            <button type="button"
+                                class="flex justify-center items-center text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center">
+                                <i class="fa-regular fa-circle mr-2"></i>
+                                <p>Book Appoinments</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
+        <!-- our service section start -->
+        <section class="py-12">
+            <div class="container mx-auto">
+                <!-- section-title -->
+                <div class="text-center">
+                    <p
+                        class="inline-block uppercase text-themeRedColor rounded-full outline-1 outline-dashed py-2 px-4 font-medium">
+                        <i class="fa-solid fa-circle mr-3 text-sm"></i> OUR BEST SERVICE
+                    </p>
+                    <h2
+                        class="text-[36px] md:text-[50px] leading-[60px] md:leading-[70px] text-[##222222] font-bold mt-[10px] mb-[16px]">
+                        Medical Service For Medicine.
+                    </h2>
+                </div>
+                <!-- wrapper -->
+                <div class="px-2 lg:px-0 mt-5 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- item -->
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service1.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service2.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service3.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service4.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service5.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group border rounded duration-200 hover:shadow-xl">
+                        <figure class="relative w-full 
+                        before:absolute
+                        before:bg-black
+                        before:opacity-0
+                        before:content['']
+                        before:right-0
+                        before:bottom-0
+                        before:h-full
+                        before:w-0
+                        before:duration-300
+                        group-hover:before:opacity-[0.5]
+                        group-hover:before:w-1/2
+                        ">
+                            <img class="w-full" src="./img/medi-service6.jpg" alt="" />
+                            <div
+                                class="absolute left-0 bottom-0 bg-themeRedColor p-4 duration-300 group-hover:left-[50%] group-hover:bottom-[40%] group-hover:-translate-x-[50%]">
+                                <i class="fa-solid fa-bed-pulse text-white text-2xl"></i>
+                            </div>
+                        </figure>
+                        <div class="p-8">
+                            <h2 class="font-bold text-[#333333] text-[22px] mt-[10px]">
+                                Medicine of Health
+                            </h2>
+                            <p class="my-[10px] text-[17px] leading-[26px] text-[#636363] mb-[15px]">
+                                Lorem Ipsum, you need to be sure to isn't anything embarrassin
+                            </p>
+                            <button type="button"
+                                class="inline-block text-white bg-themeRedColor hover:bg-themeDarkColor outline-none font-medium rounded-md text-sm lg:text-[17px] px-6 py-4 text-center lg:mr-0">
+                                <i class="fa-regular fa-circle mr-2"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our service section end -->
     </main>
 
-
     <footer></footer>
-
 
     <!-- flowbite ui js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
